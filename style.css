@@ -1,0 +1,64 @@
+.box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.box-container .box{
+  flex: 1 1 30rem;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border: .1rem solid rgba(0, 0, 0,.3);
+  border-radius: .5rem;
+  padding: 30px;
+}
+.box-container .box .input{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-container .box .input input{
+  height: 30px;
+  width: 180px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border: .1rem solid rgba(0, 0, 0,.3);
+  border-radius: .3rem;
+}
+.box-container .btn{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.box-container .btn input{
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border: .1rem solid rgba(0, 0, 0,.3);
+  border-radius: .3rem;
+}
+
+.box-container .btn input:hover{
+  background: #666;
+  color: white;
+  transition: all .1s linear;
+}
+.mytable{
+  display: flex;
+  justify-content: center;
+}
+table,th,td{
+  border: 1px solid black;
+}
+table input{
+  cursor: pointer;
+}
+
+table input:hover{
+  background: #666;
+  color: white;
+  transition: all .1s linear;
+}

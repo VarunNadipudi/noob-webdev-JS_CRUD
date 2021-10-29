@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="box">
+        <div class="input">
+          <input type="text" placeholder="Student ID" id="stdid">
+          <input type="text" placeholder="Student Name" id="stdname">
+          <input type="text" placeholder="Student Stream" id="stdstream">
+          <input type="text" placeholder="Student Marks" id="stdmarks">
+        </div>
+        <div class="btn">
+          <input type="button" value="Add Record" id="create_record" onclick="createRecord()">
+          <input type="button" value="Save Record" id="save_record" onclick="saveRecord()" style="display:none">
+        </div>
+        <div class="mytable">
+          <table id="MyDynamicTable">
+            <caption>Student Details</caption>
+            <tr>
+              <th>Student Id</th>
+              <th>Student Name</th>
+              <th>Student Stream</th>
+              <th>Student Marks</th>
+              <th>&nbsp&nbsp&nbsp</th>
+              <th>&nbsp&nbsp&nbsp</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="input">
+          <input type="text" placeholder=" Search by Student ID" id="sstdid">
+          <input type="text" placeholder="Search by Student Name" id="sstdname">
+          <input type="text" placeholder="Search by Student Stream" id="sstdstream">
+        </div>
+        <div class="btn">
+          <input type="button" value="Search Record" id="search_record" onclick="searchRecord()">
+          <input type="button" value="Clear" id="clear_record" onclick="clearTable()" style="display:none">
+        </div>
+        <div class="mytable">
+          <table id="MyDynamicSearchTable">
+            <caption>Student Details</caption>
+            <tr>
+              <th>Student Id</th>
+              <th>Student Name</th>
+              <th>Student Stream</th>
+              <th>Student Marks</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
